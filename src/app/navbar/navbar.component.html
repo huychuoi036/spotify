@@ -18,8 +18,8 @@
         <!-- menu -->
         <ul class="menu">
 
-          <li (click)="addActive($event)" routerLinkActive="active" routerLink="">
-            <a href="#">
+          <li routerLinkActive="active" routerLink="/">
+            <a>
               <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
@@ -29,7 +29,7 @@
             </a>
           </li>
 
-          <li (click)='isSearch = true' routerLinkActive="active" [routerLink]="['/search']">
+          <li routerLinkActive="active" [routerLink]="['search']">
             <a>
               <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -40,8 +40,8 @@
             </a>
           </li>
 
-          <li>
-            <a href="#">
+          <li routerLinkActive="active" [routerLink]="['playlist']">
+            <a>
               <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"

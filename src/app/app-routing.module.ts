@@ -5,13 +5,8 @@ import { SearchComponent } from './Search/Search.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     loadChildren: () => import('./home-page/home-page.module').then(e => e.HomePageModule)
-  },
-  {
-    path: '',
-    redirectTo: 'homepage',
-    pathMatch: 'full'
   },
   {
     path: 'search',
@@ -24,12 +19,17 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then(e => e.LoginModule)
+  },
+  {
+    path:'',
+    redirectTo:'home',
+    pathMatch:'full'
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(
-    routes, 
+    routes,
     {preloadingStrategy: PreloadAllModules}
     )
   ],

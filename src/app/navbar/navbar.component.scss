@@ -13,7 +13,7 @@
     height: 100%;
     padding: 25px 0;
     z-index: 1000;
-    
+
     // logo
     .logo {
         padding: 0 20px;
@@ -51,26 +51,15 @@
     ul {
         padding: 0 5px;
         margin-bottom: 30px;
-
-        .active {
-            background-color: #282828;
-            border-radius: 5px;
-            a {
-                color: #fff;
-            }
-            svg {
-                color: #fff;
-            }
-        }
         li {
             cursor: pointer;
-            &:hover {
+            &:hover , &.active{
                 background-color: #282828;
                 border-radius: 5px;
                 a {
                     color: #fff;
                 }
-                
+
                 svg {
                     color: #fff;
                 }
@@ -164,7 +153,7 @@
         margin: 20px 0;
         padding: 0 20px;
         margin-bottom: 20px;
-        
+
         a {
             text-decoration: none;
             color: #B3B3B3;
@@ -252,7 +241,7 @@
             }
         }
     }
-    
+
     .search {
         form {
             position: relative;
@@ -275,5 +264,5 @@
             }
         }
     }
-    
+
 }

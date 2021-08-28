@@ -5,9 +5,13 @@ import { SearchComponent } from './Search/Search.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: 'homepage',
     loadChildren: () => import('./home-page/home-page.module').then(e => e.HomePageModule)
   },
+  // {
+  //   path: 'homepage',
+  //   component: HomePageComponent
+  // }
   {
     path: 'search',
     loadChildren: () => import('./Search/Search.module').then(e => e.SearchModule)
@@ -22,7 +26,7 @@ const routes: Routes = [
   },
   {
     path:'',
-    redirectTo:'home',
+    redirectTo:'homepage',
     pathMatch:'full'
   }
 ];

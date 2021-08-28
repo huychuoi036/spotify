@@ -18,7 +18,7 @@ import { SearchModule } from './Search/Search.module';
     AppRoutingModule,
     FormsModule,
     // SearchModule,
-    // HomePageModule
+    HomePageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
